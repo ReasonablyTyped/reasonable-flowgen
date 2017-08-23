@@ -1,7 +1,6 @@
-# Flowgen
+# reasonable-flowgen
 
-## The state of the converter
-It's surprisingly robust and non-lossy as it stands right now, in big part thanks to how similar flow and typescript definition files are. Please see the output in [this flow-typed PR](https://github.com/flowtype/flow-typed/pull/590) for the state of the output.
+> A fork of the original [flowgen](https://github.com/joarwilk/flowgen) customized for [ReasonablyTyped](https://github.com/rrdelaney/ReasonablyTyped)
 
 ## Usage
 

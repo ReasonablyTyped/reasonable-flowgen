@@ -1,6 +1,6 @@
 {
-  "name": "flowgen",
-  "version": "1.2.0",
+  "name": "reasonable-flowgen",
+  "version": "0.1.0",
   "description": "Generate flowtype definition files from TypeScript",
   "main": "lib/index.js",
   "scripts": {

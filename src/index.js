@@ -1,5 +1,3 @@
 import compiler from './cli/compiler'
 
-export default {
-  compiler
-}
+export default compiler

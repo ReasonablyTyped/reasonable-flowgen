@@ -4,10 +4,10 @@
 
 ## Usage
 
-Install using `npm i flowgen --save`
+Install using `npm i reasonable-flowgen --save`
 
 ```js
-import { compiler } from 'flowgen';
+import compiler from 'flowgen';
 
 // To compile a d.ts file
 const flowdef = compiler.compileDefinitionFile(filename);
@@ -19,35 +19,6 @@ const flowdef = compiler.compileDefinitionString(str);
 // esTarget = ES5/ES6 etc
 const testCase = compiler.compileTest(path, esTarget)
 ```
-
-*Recommended second step:*
-
-```js
-import { beautify } from 'flowgen';
-
-// Make the definition human readable
-const readableDef = beautify(generatedFlowdef);
-```
-
-### CLI
-
-Standard usage (will produce `export.flow.js`):
-```
-npm i -g flowgen
-flowgen lodash.d.ts
-```
-
-### Options
-```
--o / --output-file [outputFile]: Specifies the filename of the exported file, defaults to export.flow.js
-```
-
-### Flags for specific cases
-```
---flow-typed-format: Format output so it fits in the flow-typed repo
---compile-tests: Compile any sibling <filename>-tests.ts files found
-```
-
 
 ## The difficult parts
 
